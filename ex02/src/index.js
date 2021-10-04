@@ -33,13 +33,13 @@ let fifteenArray = [];
 
 for (let i = 0; i < 16; i++) {
   if (i < 15) {
-    fifteenArray.push(iterator.next().value + "#,");
+    fifteenArray.push(iterator.next().value + "#");
   } else {
     fifteenArray.push(iterator.next().value + "!");
   }
 }
 
-console.log(...fifteenArray);
+console.log(fifteenArray);
 // Only change code above this line
 
 module.exports = { fifteenArray, myGenerator };
